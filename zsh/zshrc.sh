@@ -17,8 +17,6 @@ RPROMPT="%B%F{yellow}[%n@%m:%~ ]%b%f"
 autoload -U compinit
 compinit
 
-eval $(gdircolors ~/solarized/dircolors-solarized/dircolors.ansi-universal)
-
 if [ -n "$LS_COLORS" ]; then
   zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 fi

@@ -7,10 +7,17 @@ ln -s $(pwd)/zprofile.d ~/.zprofile.d
 ln -s $(pwd)/zshrc.d ~/.zshrc.d
 ```
 
+```bash
+brew install rbenv
+brew install nodenv
+brew install direnv
+```
+
+- https://github.com/direnv/direnv
+
 ## Dependencies
 
 - coreutils brew
-- solarized
 
 ## Refer to
 
