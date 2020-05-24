@@ -1,4 +1,5 @@
 {
+    "editor.tabSize": 2,
     "editor.minimap.enabled": false,
 
     "vim.useSystemClipboard": true,
@@ -18,5 +19,22 @@
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
     },
-    "breadcrumbs.enabled": true
+    "breadcrumbs.enabled": true,
+    "window.zoomLevel": 0,
+    "editor.fontFamily": "Osaka-Mono, Monaco, Menlo, 'Courier New', monospace",
+    "editor.fontSize": 15,
+    "editor.lineHeight": 18,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "markdown-preview-enhanced.mathRenderingOption": "MathJax",
+    "jshint.options": {
+        "esversion": 9
+    },
+    "[cpp]": {
+       "editor.tabSize": 4,
+       "editor.insertSpaces": true
+    },
+    "C_Cpp.updateChannel": "Insiders",
+    "cmake.configureOnOpen": true,
+    "http.proxySupport": "off"
 }
