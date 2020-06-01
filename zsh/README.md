@@ -1,5 +1,7 @@
 # zsh
 
+## Setup
+
 ```bash
 ln -s $(pwd)/zprofile.sh ~/.zprofile
 ln -s $(pwd)/zshrc.sh ~/.zshrc 
@@ -17,7 +19,12 @@ brew install direnv
 
 ## Dependencies
 
-- coreutils brew
+- coreutils
+- brew
+
+### for WSL
+
+- wsl-open
 
 ## Refer to
 

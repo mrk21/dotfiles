@@ -21,7 +21,7 @@ if [ -n "$LS_COLORS" ]; then
   zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 fi
 
-alias ls="gls --color"
+alias ls="ls --color"
 
 # keymap
 bindkey -v
