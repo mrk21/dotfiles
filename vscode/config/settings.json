@@ -21,7 +21,7 @@
     },
     "breadcrumbs.enabled": true,
     "window.zoomLevel": 0,
-    "editor.fontFamily": "Osaka-Mono, Monaco, Menlo, 'Courier New', monospace",
+    "editor.fontFamily": "Osaka-Mono, Monaco, Menlo, Consolas, 'Courier New', monospace",
     "editor.fontSize": 15,
     "editor.lineHeight": 18,
     "editor.renderWhitespace": "all",
