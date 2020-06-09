@@ -21,6 +21,9 @@ if [ -n "$LS_COLORS" ]; then
   zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 fi
 
+[ -n "${IS_MAC_ENV}" ] && alias ls="gls"
+[ -n "${IS_MAC_ENV}" ] && alias code="open -b com.microsoft.vscode"
+[ -n "${IS_WSL_ENV}" ] && alias open="wsl-open"
 alias ls="ls --color"
 
 # keymap
