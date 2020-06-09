@@ -191,7 +191,7 @@ module.exports = {
     "editor:undo": "ctrl+shift+z",
     "editor:redo": "ctrl+shift+y",
     "editor:cut": "ctrl+x",
-    "editor:copy": "ctrl+c",
+    "editor:copy": "ctrl+shift+c",
     "editor:paste": "ctrl+v",
     "editor:selectAll": "ctrl+shift+a",
     "editor:movePreviousWord": "ctrl+left",
