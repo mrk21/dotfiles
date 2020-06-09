@@ -1,6 +1,6 @@
 # env
 [ -n "${TERM_SESSION_ID}" ] && export IS_MAC_ENV=1
-[ -n "${WSLENV}" ] && export IS_WSL_ENV=1
+[ -n "${WSL_INTEROP}" ] && export IS_WSL_ENV=1
 
 # base
 export PATH=/usr/local/bin:${PATH}
