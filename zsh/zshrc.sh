@@ -107,6 +107,15 @@ set_git_local_config(){
   fi
 }
 
+# for hyper-wcd-wsl
+if [ -n "${IS_WSL_ENV}" ]; then
+  case ${TERM} in
+    xterm*)
+      precmd () {print -Pn "\e]0;%n@%m: %~\a"}
+      ;;
+  esac
+fi
+
 # include sub settings
 for config in $(find ~/.zshrc.d/ -name "*.sh"); do
   source $config;
