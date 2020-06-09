@@ -4,5 +4,7 @@
     { "key": "ctrl+h", "command": "workbench.action.previousEditor" },
     { "key": "ctrl+o", "command": "workbench.action.gotoSymbol" },
     { "key": "ctrl+n", "command": "workbench.action.files.newUntitledFile" },
-    { "key": "ctrl+w", "command": "workbench.action.closeActiveEditor" }
+    { "key": "ctrl+w", "command": "workbench.action.closeActiveEditor" },
+    { "key": "ctrl+f", "command": "actions.find" },
+    { "key": "ctrl+shit+n", "command": "workbench.action.newWindow" }
 ]
