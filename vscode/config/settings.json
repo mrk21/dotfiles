@@ -15,6 +15,7 @@
             "after": [":"]
         }
     ],
+
     "workbench.startupEditor": "newUntitledFile",
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
