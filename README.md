@@ -12,6 +12,7 @@
 
 ```bash
 brew install coreutils
+brew install findutils
 brew install wget
 brew install tree
 brew install cmake
