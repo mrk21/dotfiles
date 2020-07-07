@@ -7,5 +7,6 @@
     { "key": "ctrl+n", "command": "workbench.action.files.newUntitledFile" },
     { "key": "ctrl+shit+n", "command": "workbench.action.newWindow" },
     { "key": "ctrl+a", "command": "editor.action.selectAll" },
+    { "key": "cmd+a", "command": "editor.action.selectAll" },
     { "key": "ctrl+f", "command": "actions.find" }
 ]
