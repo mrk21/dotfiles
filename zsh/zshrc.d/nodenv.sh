@@ -1,2 +1,5 @@
 export PATH="$HOME/.nodenv/bin:$PATH"
-eval "$(nodenv init -)"
+
+if which nodenv >/dev/null; then
+  eval "$(nodenv init -)"
+fi
