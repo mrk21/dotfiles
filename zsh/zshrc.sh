@@ -32,6 +32,7 @@ export SHELL=/bin/zsh
 if [ -n "${IS_MAC_ENV}" ]; then
   alias ls="gls"
   alias find="gfind"
+  export PATH=/usr/local/opt/coreutils/libexec/gnubin:${PATH}
 elif [ -n "${IS_WSL_ENV}" ]; then
   alias open="wsl-open"
 fi
