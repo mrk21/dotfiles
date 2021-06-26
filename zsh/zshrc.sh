@@ -17,6 +17,16 @@ RPROMPT="%B%F{yellow}[%n@%m:%~ ]%b%f"
 autoload -U compinit
 compinit
 
+# cdr
+# @see https://qiita.com/reireias/items/fd96d67ccf1fdffb24ed
+autoload -Uz add-zsh-hock
+autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+add-zsh-hook chpwd chpwd_recent_dirs
+zstyle ':completion:*' recent-dirs-insert both
+zstyle ':chpwd:*' recent-dirs-default true
+zstyle ':chpwd:*' recent-dirs-max 1000
+zstyle ':chpwd:*' recent-dirs-file "$HOME/.cache/chpwd-recent-dirs"
+
 if [ -n "$LS_COLORS" ]; then
   zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 fi
