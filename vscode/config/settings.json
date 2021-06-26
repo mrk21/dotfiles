@@ -83,5 +83,6 @@
             "serve"
         ]
     },
-    "go.toolsManagement.autoUpdate": true
+    "go.toolsManagement.autoUpdate": true,
+    "security.workspace.trust.untrustedFiles": "open"
 }
