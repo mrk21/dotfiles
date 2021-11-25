@@ -13,6 +13,12 @@ setopt SHARE_HISTORY
 PROMPT="%B%F{red}#%b%f "
 RPROMPT="%B%F{yellow}[%n@%m:%~ ]%b%f"
 
+case $TERM in
+  xterm*)
+    precmd () { print -Pn "\e]0;%~\a" }
+    ;;
+esac
+
 # color
 autoload -U compinit
 compinit
