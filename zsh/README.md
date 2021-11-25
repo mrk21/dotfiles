@@ -9,20 +9,25 @@ ln -s $(pwd)/zprofile.d ~/.zprofile.d
 ln -s $(pwd)/zshrc.d ~/.zshrc.d
 ```
 
+### Mac
+
 ```bash
 brew install rbenv
 brew install nodenv
 brew install direnv
+brew install peco
 ```
 
 - https://github.com/direnv/direnv
 
 ## Dependencies
 
+### Mac
+
 - coreutils
 - brew
 
-### for WSL
+### WSL
 
 - wsl-open
 

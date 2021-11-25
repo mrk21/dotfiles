@@ -1,14 +1,19 @@
 # dotfiles
 
-## Install developper tools
+## Setup
+
+### Mac
+
+#### Install developper tools
 
 - Install Xcode
 
-## Install Homebrew
+#### Install Homebrew
 
 - https://brew.sh/index_ja
 
-## Install basic packages
+#### Install basic packages
+
 
 ```bash
 brew install coreutils
@@ -16,4 +21,5 @@ brew install findutils
 brew install wget
 brew install tree
 brew install cmake
+brew install peco
 ```
