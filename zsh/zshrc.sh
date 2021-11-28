@@ -62,6 +62,9 @@ alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -la'
 
+# set PATH
+export PATH=~/bin:${PATH}
+
 # include sub settings
 for config in $(find ~/.zshrc.d/ -name "*.sh"); do
   source $config;

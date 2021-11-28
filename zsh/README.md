@@ -3,6 +3,7 @@
 ## Setup
 
 ```bash
+mkdir -p ~/bin
 ln -s $(pwd)/zprofile.sh ~/.zprofile
 ln -s $(pwd)/zshrc.sh ~/.zshrc 
 ln -s $(pwd)/zprofile.d ~/.zprofile.d
@@ -30,6 +31,10 @@ brew install peco
 ### WSL
 
 - wsl-open
+
+```sh
+npm install -g wsl-open
+```
 
 ## Refer to
 

@@ -1,0 +1,3 @@
+#!/bin/sh
+# @see [WSL の Emacs から Windows 側の Google Chrome を開く | by HIGASHI Taiju | Medium](https://medium.com/@h.taiju/open-google-chrome-on-emacs-in-wsl-3493966d26ec)
+exec /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe "$@"
