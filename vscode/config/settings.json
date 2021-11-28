@@ -60,6 +60,7 @@
         "diagnostics": true
     },
     "[go]": {
+        "editor.tabSize": 4,
         "editor.snippetSuggestions": "none",
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
