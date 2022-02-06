@@ -2,13 +2,13 @@
 
 ## Setup
 
-### WSL config
+### On Windows
 
 ```powershell
 New-Item -ItemType SymbolicLink -Target "$((Convert-Path .) + '\wslconfig.ini')" -Path $($HOME + "\.wslconfig")
 ```
 
-### PowerShell config
+#### PowerShell config
 
 ```ps1
 Test-Path $profile
@@ -23,6 +23,13 @@ code $profile
 
 ```ps1
 . "\path\to\dotfiles\wsl\wsl-forwarding.ps1"
+```
+
+### On WSL
+
+```sh
+mkdir -p ~/bin
+cp ./bin/google-chrome ~/bin/google-chrome
 ```
 
 ## Localhost Forwarding
