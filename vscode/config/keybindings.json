@@ -3,9 +3,20 @@
     { "key": "ctrl+l", "command": "workbench.action.nextEditor" },
     { "key": "ctrl+h", "command": "workbench.action.previousEditor" },
     { "key": "ctrl+o", "command": "workbench.action.gotoSymbol" },
-    { "key": "ctrl+w", "command": "workbench.action.closeActiveEditor" },
+    { "key": "ctrl+w", "command": "workbench.action.closeActiveEditor", "when": "!terminalFocus" },
     { "key": "ctrl+n", "command": "workbench.action.files.newUntitledFile" },
-    { "key": "ctrl+shit+n", "command": "workbench.action.newWindow" },
+
+    // see: https://superuser.com/questions/1270103/how-to-switch-the-cursor-between-terminal-and-code-in-vscode
+    // see: https://stackoverflow.com/questions/48713604/how-can-i-clear-the-terminal-in-visual-studio-code
+    // see: https://zenn.dev/hasefumi23/articles/9395d3006e8da5
+    { "key": "ctrl+t", "command": "workbench.action.terminal.toggleTerminal" },
+    { "key": "ctrl+shift+t", "command": "workbench.action.terminal.new" },
+    { "key": "ctrl+k", "command": "workbench.action.terminal.clear", "when": "terminalFocus" },
+    { "key": "ctrl+l", "command": "workbench.action.terminal.focusNext", "when": "terminalFocus" },
+    { "key": "ctrl+h", "command": "workbench.action.terminal.focusPrevious", "when": "terminalFocus" },
+    { "key": "ctrl+w", "command": "workbench.action.terminal.kill", "when": "terminalFocus" },
+    { "key": "ctrl+j", "command": "workbench.action.toggleMaximizedPanel", "when": "terminalFocus" },
+
     { "key": "ctrl+a", "command": "editor.action.selectAll" },
     { "key": "cmd+a", "command": "editor.action.selectAll" },
     { "key": "ctrl+f", "command": "actions.find" }
