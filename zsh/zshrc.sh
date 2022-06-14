@@ -40,6 +40,16 @@ fi
 # keymap
 bindkey -v
 
+# @see https://stackoverflow.com/questions/61466461/yank-in-visual-vim-mode-in-zsh-does-not-copy-to-clipboard-in-ordert-to-paste-w
+if [ -n "${IS_MAC_ENV}" ]; then
+  function vi-yank-xclip {
+      zle vi-yank
+    printf "$CUTBUFFER" | pbcopy -i
+  }
+  zle -N vi-yank-xclip
+  bindkey -M vicmd 'y' vi-yank-xclip
+fi
+
 # variables
 export EDITOR=vim
 export SHELL=/bin/zsh
@@ -48,6 +58,8 @@ export SHELL=/bin/zsh
 if [ -n "${IS_MAC_ENV}" ]; then
   alias ls="gls"
   alias find="gfind"
+  alias xargs="gxargs"
+  alias sed="gsed"
   export PATH=/usr/local/opt/coreutils/libexec/gnubin:${PATH}
 elif [ -n "${IS_WSL_ENV}" ]; then
   alias open="wsl-open"
