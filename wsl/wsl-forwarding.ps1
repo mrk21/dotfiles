@@ -14,13 +14,13 @@ function Invoke-WSL-Command([String]$Cmd) {
 
 function Get-WSL-IP() {
   [OutputType([IPAddress])]
-  $IP = Invoke-WSL-Command "ip route | grep 'eth0 proto' | cut -d ' ' -f9"
+  $IP = Invoke-WSL-Command "ip route | grep 'dev eth0 proto kernel scope link src' | cut -d ' ' -f9"
   return [IPAddress]$IP
 }
 
 function Get-WSL-Ports() {
   [OutputType([String[]])]
-  $Ports = Invoke-WSL-Command "ss -ltunH | sed -e 's/ \+/ /g' | cut -d ' ' -f 5 | grep -E '^(\*|0.0.0.0):' | sed -e 's/.*:\([0-9]\+\)/\1/g'"
+  $Ports = Invoke-WSL-Command "ss -ltunH | sed -e 's/ \+/ /g' | grep -E '(\*|0.0.0.0):' | cut -d ' ' -f 5 | sed -e 's/.*:\([0-9]\+\)/\1/g'"
   return $Ports ? $Ports : @()
 }
 
