@@ -18,6 +18,7 @@
 ```bash
 brew install coreutils
 brew install findutils
+brew install gnu-sed
 brew install wget
 brew install tree
 brew install cmake
