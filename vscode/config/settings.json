@@ -46,5 +46,4 @@
     // "vim.autoSwitchInputMethod.defaultIM": "0",
     // "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\tools\\zenhan\\bin64\\zenhan.exe",
     // "vim.autoSwitchInputMethod.switchIMCmd": "C:\\tools\\zenhan\\bin64\\zenhan.exe {im}",
-    // "typescript.updateImportsOnFileMove.enabled": "always"
 }
