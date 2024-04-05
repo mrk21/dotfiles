@@ -20,7 +20,6 @@
     ],
     "workbench.startupEditor": "newUntitledFile",
     "breadcrumbs.enabled": true,
-    "window.zoomLevel": 0,
     "editor.fontFamily": "Osaka-Mono, Monaco, Menlo, Consolas, 'Courier New', monospace",
     "editor.fontSize": 15,
     "editor.lineHeight": 18,
@@ -33,12 +32,35 @@
     },
     "http.proxySupport": "off",
     "[markdown]": {
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
     "security.workspace.trust.untrustedFiles": "open",
     "editor.inlineSuggest.enabled": true,
     "terminal.integrated.fontFamily": "Cascadia Code",
     "terminal.integrated.fontSize": 14,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "jsonnet.languageServer.formatting": {
+        
+    },
+    "githubPullRequests.pullBranch": "never",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "ruby.intellisense": "rubyLocate",
+    "markdown-preview-enhanced.plantumlJarPath": "/opt/homebrew/Cellar/plantuml/1.2024.3/libexec/plantuml.jar",
 
     // for windows
     // @see Win版の VS Code+VSCodeVim でノーマルモードに戻った時にIMEを半角英数入力にする - Qiita https://qiita.com/iuchi/items/9ddcfb48063fc5ab626c
