@@ -4,6 +4,7 @@
 
 ```bash
 mkdir -p ~/bin
+mkdir -p $HOME/.cache/shell/
 ln -s $(pwd)/zprofile.sh ~/.zprofile
 ln -s $(pwd)/zshrc.sh ~/.zshrc 
 ln -s $(pwd)/zprofile.d ~/.zprofile.d

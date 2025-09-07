@@ -1,49 +1,81 @@
 {
-    "editor.tabSize": 2,
-    "editor.minimap.enabled": false,
-    "vim.useSystemClipboard": true,
-    "vim.easymotion": true,
-    "vim.sneak": true,
-    "vim.incsearch": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.foldfix": true,
-    "vim.normalModeKeyBindings": [
-        {
-            "before": [
-                ";"
-            ],
-            "after": [
-                ":"
-            ]
-        }
-    ],
-    "workbench.startupEditor": "newUntitledFile",
-    "breadcrumbs.enabled": true,
-    "window.zoomLevel": 0,
-    "editor.fontFamily": "Osaka-Mono, Monaco, Menlo, Consolas, 'Courier New', monospace",
-    "editor.fontSize": 15,
-    "editor.lineHeight": 18,
-    "editor.renderWhitespace": "all",
-    "editor.renderControlCharacters": true,
-    "markdown-preview-enhanced.mathRenderingOption": "MathJax",
-    "[cpp]": {
-        "editor.tabSize": 4,
-        "editor.insertSpaces": true
-    },
-    "http.proxySupport": "off",
-    "[markdown]": {
-        "editor.formatOnSave": true
-    },
-    "security.workspace.trust.untrustedFiles": "open",
-    "editor.inlineSuggest.enabled": true,
-    "terminal.integrated.fontFamily": "Cascadia Code",
-    "terminal.integrated.fontSize": 14,
+  "editor.tabSize": 2,
+  "vim.useSystemClipboard": true,
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.foldfix": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [";"],
+      "after": [":"]
+    }
+  ],
+  "workbench.startupEditor": "newUntitledFile",
+  "breadcrumbs.enabled": true,
+  "editor.fontFamily": "Osaka-Mono, Monaco, Menlo, Consolas, 'Courier New', monospace",
+  "editor.fontSize": 15,
+  "editor.lineHeight": 18,
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "markdown-preview-enhanced.mathRenderingOption": "MathJax",
+  "[cpp]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  "http.proxySupport": "off",
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.inlineSuggest.enabled": true,
+  "terminal.integrated.fontFamily": "Monaco,Cascadia Code",
+  "terminal.integrated.fontSize": 14,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "jsonnet.languageServer.formatting": {},
+  "githubPullRequests.pullBranch": "never",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "ruby.intellisense": "rubyLocate",
+  "markdown-preview-enhanced.plantumlJarPath": "/opt/homebrew/Cellar/plantuml/1.2024.8/libexec/plantuml.jar",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "files.watcherExclude": {
+    "**": true
+  },
+  "terminal.integrated.scrollback": 10000,
+  "editor.minimap.showSlider": "always"
 
-    // for windows
-    // @see Win版の VS Code+VSCodeVim でノーマルモードに戻った時にIMEを半角英数入力にする - Qiita https://qiita.com/iuchi/items/9ddcfb48063fc5ab626c
-    // "vim.autoSwitchInputMethod.enable": true,
-    // "vim.autoSwitchInputMethod.defaultIM": "0",
-    // "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\tools\\zenhan\\bin64\\zenhan.exe",
-    // "vim.autoSwitchInputMethod.switchIMCmd": "C:\\tools\\zenhan\\bin64\\zenhan.exe {im}",
+  // for windows
+  // @see Win版の VS Code+VSCodeVim でノーマルモードに戻った時にIMEを半角英数入力にする - Qiita https://qiita.com/iuchi/items/9ddcfb48063fc5ab626c
+  // "vim.autoSwitchInputMethod.enable": true,
+  // "vim.autoSwitchInputMethod.defaultIM": "0",
+  // "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\tools\\zenhan\\bin64\\zenhan.exe",
+  // "vim.autoSwitchInputMethod.switchIMCmd": "C:\\tools\\zenhan\\bin64\\zenhan.exe {im}",
+  // "typescript.updateImportsOnFileMove.enabled": "always"
 }
