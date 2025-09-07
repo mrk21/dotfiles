@@ -69,7 +69,10 @@
     "**": true
   },
   "terminal.integrated.scrollback": 10000,
-  "editor.minimap.showSlider": "always"
+  "editor.minimap.showSlider": "always",
+
+  // @see [VSCode 1.101.0アップデートでVSCodeVimが荒ぶる不具合を直す](https://zenn.dev/hibikine/articles/ac0295ebffa652)
+  "editor.editContext": false,
 
   // for windows
   // @see Win版の VS Code+VSCodeVim でノーマルモードに戻った時にIMEを半角英数入力にする - Qiita https://qiita.com/iuchi/items/9ddcfb48063fc5ab626c
@@ -77,5 +80,4 @@
   // "vim.autoSwitchInputMethod.defaultIM": "0",
   // "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\tools\\zenhan\\bin64\\zenhan.exe",
   // "vim.autoSwitchInputMethod.switchIMCmd": "C:\\tools\\zenhan\\bin64\\zenhan.exe {im}",
-  // "typescript.updateImportsOnFileMove.enabled": "always"
 }
